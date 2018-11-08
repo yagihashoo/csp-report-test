@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "functions": "functions"
   },
   "author": "yagihashoo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@google-cloud/functions-emulator": "^1.0.0-beta.5"
+  },
+  "dependencies": {}
 }
