@@ -1,7 +1,13 @@
 exports.subscribe = (req, res) => {
+  if (req.method !== 'POST') {
+    res.status(405).send({
+      message: 'Method Not Allowed',
+    });
+  }
+
   if (req.get('content-type') !== 'application/csp-report') {
-    res.status(400).send({
-      message: 'Invalid content type',
+    res.status(412).send({
+      message: 'Precondition Failed',
     });
   }
 
@@ -16,4 +22,3 @@ exports.subscribe = (req, res) => {
     ua: userAgent,
   });
 }
-
