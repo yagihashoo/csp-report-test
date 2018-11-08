@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - beta
+    - functions
+    - deploy
+    - csp-report-test
+    - --stage-bucket=yagihash-csp-report-test
+    - --trigger-topic=cloud-builds
