@@ -5,5 +5,4 @@ steps:
     - functions
     - deploy
     - csp-report-test
-    - --stage-bucket=yagihash-csp-report-test
     - --trigger-topic=cloud-builds
