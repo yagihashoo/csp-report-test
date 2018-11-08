@@ -5,3 +5,4 @@ steps:
     - functions
     - deploy
     - csp-report-test
+    - --trigger-topic=http
