@@ -5,4 +5,4 @@ steps:
     - functions
     - deploy
     - csp-report-test
-    - --trigger-topic=http
+    - --stage-bucket=yagihash-csp-report-test
